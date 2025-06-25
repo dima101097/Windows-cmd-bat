@@ -10,6 +10,6 @@ rem w32time /config /manualpeerlist:"time.windows.com" /syncfromflags:manual /re
 echo Starting time service
 net start w32time
 echo Time synchronization...
-w32tm /resync
+w32tm /resync /force
 echo Time sync completed
 pause /t 5
